@@ -18,7 +18,7 @@ pip install -e ".[dev]"
 python -m pytest tests/ -v
 ```
 
-All tests must pass before submitting a PR. The test suite runs in under 30 seconds.
+All tests must pass before submitting a PR. The full suite takes a minute or two; run a single file while iterating.
 
 ## Code style
 
@@ -43,7 +43,7 @@ Strict mode is enabled in `pyproject.toml`.
 1. Fork the repository.
 2. Create a branch from `main`.
 3. Make your changes with tests.
-4. Run `ruff check src/` and `python -m pytest tests/`.
+4. Run `ruff check src/ tests/` and `python -m pytest tests/`.
 5. Open a pull request against `main`.
 
 Keep PRs focused on a single change. Include a clear description of what changed and why.
